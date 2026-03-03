@@ -1,0 +1,13 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  receiver: telegram
+
+receivers:
+  - name: telegram
+    telegram_configs:
+      - bot_token: "8754017414:AAHHoVGAJgSDcbxlMiDxRxnu0PG17Zr87gE"
+        chat_id: 360929395
+        parse_mode: "HTML"
+        send_resolved: true
